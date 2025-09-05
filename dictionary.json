@@ -5,6 +5,17 @@
         },
         {
             "funny": "average joe"
+        },
+        {
+            "tech": "no idea man"
+        },
+        {
+            "gaming": "npc name"
+        }
+    ],
+    "perpendicular": [
+        {
+            "math": "when 2 lines have 90 degree angle"
         }
     ]
 }

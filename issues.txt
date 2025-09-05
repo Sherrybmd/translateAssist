@@ -1,5 +1,0 @@
-adding context to same word leads to duplicate word context pairs
-
-need to make it so if word exists context is appended to word, instead of creating new
-
-READING related issue then...

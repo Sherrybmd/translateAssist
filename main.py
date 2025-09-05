@@ -5,7 +5,9 @@ GUI = CLI.gui()
 
 def main():
     session = translate.translate()
-    choice = input("__________________\n1_find word\n2_add word\n3_remove word\n>")
+    choice = input(
+        "__________________\n1_find word\n2_add word\n3_remove word\n4_showAll\n>"
+    )
 
     if choice == "q":
         return -1
@@ -24,9 +26,8 @@ def main():
         pass
 
     elif choice == "4":
-        pass
+        session.display()
 
-    print(session.dictionary)
     del session
 
 

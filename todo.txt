@@ -8,28 +8,12 @@ json will make this much easier, no crude file managing methods needed, hopefull
 
 
 
-*save to file:
-  take the dictionary, append to file as json
-
-*add word:
-  store word that needs meaning, then add contexts and meanings equal to contexts, Like:
-  [context]: [meaning/example to give idea about the word]
-
-  Example:
-      word = corrupt:
-        emotional: the corrupt cop had no morales
-        technical: the hard drive became corrupt, unfortunate
-        fantasy: the chaos marines, misguided, corrupt by the crude gods, devolved into abominations.
-
-  this adds to dictionary,
-  needs to be pulled up when searching the word "corrupt"
-  must store as dictionary:
-    key = word
-    value = contexts and their meanings
-
 
 *find word:
   load file, find key in json, load json, list all context and meanings 
  important, this shall pull up all contexts and meanings in each context.
+
+
+* display
 
 

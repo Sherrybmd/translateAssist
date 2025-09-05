@@ -23,8 +23,18 @@ class translate:
     def findWord(self):
         pass
 
-    def display(self):
-        pass
+    def display(self, keyword=""):
+        if keyword == "":
+            for word, contextPair in self.dictionary.items():
+                print("________________")
+                print(f"{word}: ", end="\n    ")  # 4 indent space
+                for pair in contextPair:
+                    for context, meaning in pair.items():
+                        print(f"{context}:  {meaning}", end="\n    ")
+                print()
+
+        else:
+            pass
 
     def saveToFile(self):
         if self.dictionary == {}:  # do not rewrite file when shit hits the fan
