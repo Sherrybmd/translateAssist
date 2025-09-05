@@ -17,8 +17,8 @@ class translate:
         pass
 
     def saveToFile(self):
-        f = open(self.path, "a+")
-        json.dump(self.wordAdded, indent=4, fp=f)
+        with open(self.path, "a+") as f:
+            json.dump(self.wordAdded, indent=4, fp=f)
 
     def loadFromFile(self):
         pass
