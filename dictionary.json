@@ -1,17 +1,10 @@
 {
     "joe": [
         {
-            "politics": "president"
+            "politics": "president of united states"
         },
-        [
-            {
-                "meme": "is a retarded president"
-            }
-        ]
-    ],
-    "pepe": [
         {
-            "meme": "is frog"
+            "funny": "average joe"
         }
     ]
 }

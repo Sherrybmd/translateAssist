@@ -9,10 +9,12 @@ class translate:
 
         self.wordAdded: dict
         self.contextPairs = []
+        self.dictPair: dict
 
     def addWord(self, word, context, meaning):
-        self.contextPairs.append({context: meaning})
-        pair = self.contextPairs
+        self.dictPair = {context: meaning}
+        self.contextPairs.append(self.dictPair)
+        pair = self.contextPairs  # doing this because i cant pass a pointer to json
         self.wordAdded = {word: pair}
         del pair
         self.addWordContextPair()
@@ -43,6 +45,6 @@ class translate:
     def addWordContextPair(self):
         for k, v in self.wordAdded.items():
             if k in self.dictionary.keys():
-                self.dictionary[k].append(v)
+                self.dictionary[k].append(self.dictPair)
             else:
                 self.dictionary.update(self.wordAdded)

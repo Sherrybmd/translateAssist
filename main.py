@@ -8,7 +8,7 @@ def main():
     choice = input("__________________\n1_find word\n2_add word\n3_remove word\n>")
 
     if choice == "q":
-        return
+        return -1
 
     elif choice == "1":
         pass
@@ -31,4 +31,5 @@ def main():
 
 
 while True:
-    main()
+    if main() == -1:
+        break
