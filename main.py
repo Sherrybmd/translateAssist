@@ -1,13 +1,16 @@
 from lib import CLI, translate
 
-session = translate.translate()
 GUI = CLI.gui()
 
 
 def main():
+    session = translate.translate()
     choice = input("__________________\n1_find word\n2_add word\n3_remove word\n>")
 
-    if choice == "1":
+    if choice == "q":
+        return
+
+    elif choice == "1":
         pass
 
     elif choice == "2":
@@ -23,5 +26,9 @@ def main():
     elif choice == "4":
         pass
 
+    print(session.dictionary)
+    del session
 
-main()
+
+while True:
+    main()
