@@ -11,7 +11,8 @@ def main():
         return -1
 
     elif choice == "1":
-        pass
+        word = GUI.getWord()
+        session.findWord(word)
 
     elif choice == "2":
         word = GUI.getWord()
@@ -26,7 +27,6 @@ def main():
     elif choice == "4":
         pass
 
-    print(session.dictionary)
     del session
 
 

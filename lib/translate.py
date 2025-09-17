@@ -20,8 +20,17 @@ class translate:
         self.addWordContextPair()
         self.saveToFile()
 
-    def findWord(self):
-        pass
+    def findWord(self, word):
+        for k, v in self.dictionary.items():  # reminder that v is a list of dicts
+            if k == word:
+                print(word, ":", sep="")
+                for i in range(len(v)):
+                    for context, meaning in v[i].items():
+                        print("    ", end="")
+                        print(context, ": ", meaning, sep="")
+
+            else:
+                print("word not found")
 
     def display(self):
         pass

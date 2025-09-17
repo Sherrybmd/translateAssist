@@ -6,7 +6,7 @@ class gui:
         pass
 
     def getWord(self):
-        word = input("Add word: \n>")
+        word = input("Write the word: \n>")
         return word
 
     def getContext(self, word: str):
