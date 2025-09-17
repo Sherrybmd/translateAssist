@@ -22,15 +22,19 @@ class translate:
 
     def findWord(self, word):
         for k, v in self.dictionary.items():  # reminder that v is a list of dicts
-            if k == word:
-                print(word, ":", sep="")
-                for i in range(len(v)):
-                    for context, meaning in v[i].items():
-                        print("    ", end="")
-                        print(context, ": ", meaning, sep="")
+            try:
+                if k == word:
+                    print(word, ":", sep="")
+                    for item in v:
+                        txt = ", ".join(
+                            f"{key}: {value}" for key, value in item.items()
+                        )
+                        print("   ", txt)
 
-            else:
-                print("word not found")
+                else:
+                    print("word not found")
+            except Exception as e:
+                print("Error finding word,", e)
 
     def display(self):
         pass
