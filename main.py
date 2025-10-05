@@ -13,7 +13,8 @@ def main():
         return -1
 
     elif choice == "1":
-        pass
+        word = GUI.getWord()
+        session.findWord(word)
 
     elif choice == "2":
         word = GUI.getWord()

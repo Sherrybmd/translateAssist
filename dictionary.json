@@ -17,5 +17,13 @@
         {
             "math": "when 2 lines have 90 degree angle"
         }
+    ],
+    "call": [
+        {
+            "order/demanding": "a message transferred in any way that attracts the receiver to a purpose/task"
+        },
+        {
+            "communication": "using a tool to attemp a two sided conversation with one person"
+        }
     ]
 }
