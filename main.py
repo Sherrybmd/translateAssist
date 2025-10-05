@@ -37,6 +37,9 @@ def main():
     del session
 
 
+if os.path.exists("./pyinstaller-dic/") is True:
+    os.chdir("pyinstaller-dic")
+
 while True:
     if main() == -1:
         break
