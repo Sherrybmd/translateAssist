@@ -30,11 +30,12 @@ class translate:
                             f"{key}: {value}" for key, value in item.items()
                         )
                         print("   ", txt)
+                    return
 
-                else:
-                    print("word not found")
             except Exception as e:
                 print("Error finding word,", e)
+        else:
+            print("word not found")
 
     def display(self):
         pass
