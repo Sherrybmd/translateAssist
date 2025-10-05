@@ -1,4 +1,5 @@
 from lib import CLI, translate
+import os
 
 GUI = CLI.gui()
 
@@ -6,8 +7,9 @@ GUI = CLI.gui()
 def main():
     session = translate.translate()
     choice = input(
-        "__________________\n1_find word\n2_add word\n3_remove word\n4_showAll\n>"
+        "__________________\n1_find word\n2_add word\n3_remove word\n4_showAll\n5_show Words\n>"
     )
+    os.system("clear")
 
     if choice == "q":
         return -1
@@ -28,6 +30,9 @@ def main():
 
     elif choice == "4":
         session.display()
+
+    elif choice == "5":
+        session.showWords()
 
     del session
 

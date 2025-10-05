@@ -50,6 +50,11 @@ class translate:
         else:
             pass
 
+    def showWords(self):
+        for word in self.dictionary.keys():
+            print(f"{word}", end=" | ")
+        print()
+
     def saveToFile(self):
         try:
             if self.dictionary == {} or self.dictionary is None:
